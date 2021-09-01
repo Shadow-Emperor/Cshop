@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "358543098099",
+    "firebase_url": "https://onlineshopping-327ea-default-rtdb.firebaseio.com",
+    "project_id": "onlineshopping-327ea",
+    "storage_bucket": "onlineshopping-327ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358543098099:android:a0e10a564b5424b01a7786",
+        "android_client_info": {
+          "package_name": "com.abhi.camkartadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358543098099-71s39btambtio44hefnkea40jdc5d1g6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgTeLSGU0FTqWJi-8ySyW4lSuUFt_53us"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "358543098099-71s39btambtio44hefnkea40jdc5d1g6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358543098099:android:45213a752a8776bb1a7786",
+        "android_client_info": {
+          "package_name": "com.abhi.cshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358543098099-0enjh0osijp093j0a9eb8ck9bnvdemvl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.abhi.cshop",
+            "certificate_hash": "b54650ef5800e24157cebf5f7c9c684957c41318"
+          }
+        },
+        {
+          "client_id": "358543098099-71s39btambtio44hefnkea40jdc5d1g6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgTeLSGU0FTqWJi-8ySyW4lSuUFt_53us"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "358543098099-71s39btambtio44hefnkea40jdc5d1g6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
