@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroundlogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/registerbackgrouund"
+        android:elevation="15dp"
+        android:translationZ="15dp"
+        android:layout_margin="25dp"
+        android:outlineSpotShadowColor="@android:color/darker_gray"
+        android:outlineAmbientShadowColor="@android:color/darker_gray">
+
+        <TextView
+            android:id="@+id/labellogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="25dp"
+            android:background="@color/transparent"
+            android:text="Register"
+            android:textColor="@color/black"
+            android:textSize="42dp" />
+        <TextView
+            android:id="@+id/labelcreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labellogin"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="25dp"
+            android:text="Already have an account"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:background="@color/transparent"/>
+        <TextView
+            android:id="@+id/login_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelcreate"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="25dp"
+            android:text="Login..."
+            android:textColor="@color/teal_200"
+            android:textSize="12sp"
+            android:background="@color/transparent"/>
+
+        <ImageButton
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/transparent"
+            android:src="@drawable/calllogin" />
+        <RelativeLayout
+            android:id="@+id/register_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_link"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:visibility="visible"
+            android:layout_marginBottom="25dp">
+
+            <TextView
+                android:id="@+id/label_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/register_username"
+                android:layout_marginBottom="0dp"
+                android:background="@color/transparent"
+                android:text="Username"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/register_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/label_email"
+                android:layout_marginBottom="45dp"
+                android:background="@drawable/text_box"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/label_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/register_email"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:background="@color/transparent"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/register_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/label_password"
+                android:layout_marginBottom="45dp"
+                android:background="@drawable/text_box"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/label_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/register_password"
+                android:layout_marginBottom="0dp"
+                android:background="@color/transparent"
+                android:text="password"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/register_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/Register"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="45dp"
+                android:background="@drawable/text_box"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp" />
+
+            <Button
+                android:id="@+id/Register"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_shape"
+                android:elevation="5dp"
+                android:outlineAmbientShadowColor="#00ffb7"
+                android:outlineSpotShadowColor="#00ffb7"
+                android:text="register"
+                android:textColor="@color/white"
+                android:translationZ="5dp"
+                app:backgroundTint="@color/black" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

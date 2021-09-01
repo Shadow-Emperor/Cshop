@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:numberpicker="http://schemas.android.com/tools"
+    android:elevation="50dp"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/card_view_list"
+        app:cardCornerRadius="15dp"
+        android:background="@drawable/card_view">
+
+        <CheckBox
+            android:id="@+id/add_to_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:buttonTint="@color/black"
+            android:layout_gravity="right"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/cart_image_view"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/ic_image" />
+
+            <TextView
+                android:id="@+id/cart_name_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@+id/cart_image_view"
+                android:text="product_name"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cart_number_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cart_name_view"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/cart_image_view"
+                android:text="product_price"
+                android:textColor="@color/black"
+                android:textDirection="6"
+                android:textSize="12sp"
+                android:textStyle="normal|bold|italic" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cart_number_picker"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/cart_image_view"
+                app:cardBackgroundColor="#8A9EFB"
+                app:cardCornerRadius="50dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pdt_cart_rating"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center"
+                        android:text="0.0"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/star_full_rating" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/cart_buy_button"
+                android:layout_width="75dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/cart_number_picker"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/line"
+                android:text="BUY"
+                android:textSize="10sp"
+                android:translationZ="10dp" />
+
+            <com.travijuu.numberpicker.library.NumberPicker
+                android:id="@+id/cart_number_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cart_number_view"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/cart_image_view"
+                numberpicker:focusable="false"
+                numberpicker:min="0"
+                numberpicker:unit="1"
+                numberpicker:value="0" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

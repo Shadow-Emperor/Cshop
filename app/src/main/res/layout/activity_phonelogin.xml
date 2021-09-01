@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroundlogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        app:cardBackgroundColor="#7E000000"
+        android:translationZ="-10dp">
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/labellogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingTop="30dp"
+        android:text="Register Details"
+        android:textColor="@color/white"
+        android:textSize="42dp"
+        android:background="@color/transparent"/>
+
+    <RelativeLayout
+        android:id="@+id/phone_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labellogin"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="120dp"
+        android:background="#00000000"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/idEdtPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:hint="Enter your phone"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            android:background="@drawable/text_box"
+            android:paddingLeft="10dp"/>
+
+        <Button
+            android:id="@+id/idBtnGetOtp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idEdtPhoneNumber"
+            android:layout_margin="10dp"
+            android:text="Get OTP"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_shape"
+            android:elevation="5dp"
+            android:outlineAmbientShadowColor="#00ffb7"
+            android:outlineSpotShadowColor="#00ffb7"
+            android:textColor="@color/white"
+            android:translationZ="5dp"
+            app:backgroundTint="@color/black" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:background="#00000000"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_below="@+id/labellogin"
+        android:layout_marginTop="150dp"
+        android:visibility="gone"
+        android:id="@+id/otp_layout">
+        <EditText
+            android:id="@+id/idEdtOtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Enter OTP"
+            android:maxLength="6"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/text_box"
+            android:paddingLeft="10dp"/>
+
+        <Button
+            android:id="@+id/idBtnVerify"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idEdtOtp"
+            android:layout_margin="10dp"
+            android:text="Verify OTP"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_shape"
+            android:elevation="5dp"
+            android:outlineAmbientShadowColor="#00ffb7"
+            android:outlineSpotShadowColor="#00ffb7"
+            android:textColor="@color/white"
+            android:translationZ="5dp"
+            app:backgroundTint="@color/black"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:background="#00000000"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_below="@+id/labellogin"
+        android:layout_marginTop="150dp"
+        android:visibility="gone"
+        android:id="@+id/details_layout">
+        <TextView
+            android:id="@+id/label_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/register_details_username"
+            android:layout_marginBottom="0dp"
+            android:background="@color/transparent"
+            android:text="Username"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/register_details_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/label_address"
+            android:layout_marginBottom="45dp"
+            android:background="@drawable/text_box"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/label_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/register_address"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/transparent"
+            android:text="Address"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+        <EditText
+            android:id="@+id/register_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Register_complete"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="45dp"
+            android:background="@drawable/text_box"
+            android:inputType="textMultiLine"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/Register_complete"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_shape"
+            android:elevation="5dp"
+            android:outlineAmbientShadowColor="#00ffb7"
+            android:outlineSpotShadowColor="#00ffb7"
+            android:text="register"
+            android:textColor="@color/white"
+            android:translationZ="5dp"
+            app:backgroundTint="@color/black" />
+    </RelativeLayout>
+</RelativeLayout>

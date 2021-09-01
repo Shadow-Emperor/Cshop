@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:numberpicker="http://schemas.android.com/tools"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:elevation="25dp"
+    android:translationZ="25dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:stateListAnimator="@drawable/state"
+        android:translationZ="25sp"
+        app:cardElevation="25dp"
+        app:cardCornerRadius="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:elevation="25dp"
+            android:background="@drawable/card_view">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="0dp">
+
+                <ImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_margin="15dp"
+                    android:layout_centerInParent="true"
+                    android:padding="@dimen/cardview_compat_inset_shadow"
+                    android:src="@drawable/ic_image" />
+
+                    <TextView
+                        android:id="@+id/pdname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="product_name"
+                        android:paddingLeft="25dp"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pdprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="25dp"
+                        android:text="product_price"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold|italic"
+                        android:layout_gravity="right"/>
+
+                    <TextView
+                        android:id="@+id/item_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="25dp"
+                        android:layout_gravity="right"
+                        android:text="0 Available"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold|italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/pdprice"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="0dp"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/addtocarthme"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/button_shape"
+                            android:backgroundTint="@color/black"
+                            android:drawableLeft="@drawable/ic_cart"
+                            android:drawableTint="@color/white"
+                            android:drawablePadding="2dp"
+                            android:elevation="10dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="5dp"
+                            android:stateListAnimator="@drawable/state"
+                            android:text="ADD TO CART"
+                            android:textSize="10sp"
+                            android:translationZ="10dp"
+                            android:textColor="@color/white"
+                            android:layout_marginRight="15dp"/>
+
+                        <com.travijuu.numberpicker.library.NumberPicker
+                            android:id="@+id/number_picker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            numberpicker:focusable="false"
+                            numberpicker:min="0"
+                            numberpicker:unit="1"
+                            numberpicker:value="0" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/wishlist"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/ic_fav"
+                android:elevation="10dp"
+                android:translationZ="10dp" />
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="350dp"
+            android:id="@+id/preview"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/card_view_layout">
+
+                <TextView
+                    android:id="@+id/preview_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:alpha="0.7"
+                    android:background="@color/transparent"
+                    android:inputType="textMultiLine"
+                    android:lineHeight="14dp"
+                    android:text="The EOS 5D Mark IV camera builds on the powerful legacy of the 5D series with imaging excellence ideal for wedding and portrait photographers, nature and landscape shooters, as well as creative videographers."
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
+                <Button
+                    android:id="@+id/preview_buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/preview_description"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/line"
+                    android:backgroundTint="#FFFFFF"
+                    android:layout_centerHorizontal="true"
+                    android:elevation="25sp"
+                    android:outlineAmbientShadowColor="@color/teal_200"
+                    android:outlineSpotShadowColor="@color/teal_200"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:stateListAnimator="@drawable/state"
+                    android:text="Buy"
+                    android:textColor="#8C8C8C"
+                    android:textStyle="bold"
+                    android:translationZ="25sp"/>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

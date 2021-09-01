@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp"
+    android:elevation="25dp"
+    android:translationZ="25dp"
+    android:background="@color/transparent"
+    android:paddingLeft="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:stateListAnimator="@drawable/state"
+        android:translationZ="25sp"
+        app:cardElevation="25dp"
+        app:cardCornerRadius="15dp"
+        android:backgroundTint="@color/black"
+        android:background="@drawable/card_view">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="25dp"
+            android:background="@drawable/card_view"
+            android:backgroundTint="@color/black">
+        <ImageView
+            android:id="@+id/product_images"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/cardview_compat_inset_shadow"
+            android:src="@drawable/ic_image" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

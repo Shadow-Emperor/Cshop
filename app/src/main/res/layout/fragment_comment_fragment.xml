@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.comment_fragment"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardCornerRadius="30dp"
+    android:layout_marginBottom="-25dp"
+    android:elevation="100dp">
+<LinearLayout
+    android:id="@+id/header_comment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_comment"
+    android:elevation="20dp"
+    android:orientation="vertical" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="25dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/label_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="10dp"
+            android:text="Review"
+            android:textColor="@color/teal_200"
+            android:fontFamily="@font/akronim"
+            android:textSize="28sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/comment_recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom"
+            android:layout_below="@+id/label_comment"
+            android:layout_marginTop="10dp"
+            android:elevation="50dp"/>
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button_shape">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/button_shape">
+                <EditText
+                    android:id="@+id/comment_text"
+                    android:inputType="textMultiLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@+id/send_comment"
+                    android:background="@drawable/button_shape"
+                    android:backgroundTint="#424347"
+                    android:hint="Comment"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textColorHint="#676666"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/send_comment"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/send_button"/>
+            </RelativeLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

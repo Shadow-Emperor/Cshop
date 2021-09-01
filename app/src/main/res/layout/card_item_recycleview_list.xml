@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="180dp"
+    android:layout_height="300dp"
+    android:elevation="50dp"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/card_view_list"
+        app:cardCornerRadius="15dp">
+        <ImageView
+            android:id="@+id/add_wishlist"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_fav"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:layout_gravity="right"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_view">
+            <ImageView
+                android:id="@+id/pdt_image"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_margin="10dp"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_image" />
+
+            <TextView
+                android:id="@+id/pdt_name_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pdt_image"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="5dp"
+                android:text="product_name"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pdt_price_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pdt_name_list"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="product_price"
+                android:textColor="@color/black"
+                android:textDirection="6"
+                android:textSize="18sp"
+                android:textStyle="normal|bold|italic" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pdt_price_list"
+                android:layout_marginTop="10dp"
+                android:layout_toStartOf="@+id/add_to_carthme"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@drawable/button_shape"
+                    android:backgroundTint="#8A9EFB">
+                    <TextView
+                        android:id="@+id/list_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center"
+                        android:text="0.0"
+                        android:textSize="18sp"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/star_full_rating" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <Button
+                android:id="@+id/add_to_carthme"
+                android:layout_width="90dp"
+                android:layout_height="29dp"
+                android:layout_below="@+id/pdt_price_list"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/line"
+                android:drawableLeft="@drawable/ic_cart"
+                android:elevation="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:stateListAnimator="@drawable/state"
+                android:text="ADD TO CART"
+                android:textSize="10sp"
+                android:translationZ="10dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

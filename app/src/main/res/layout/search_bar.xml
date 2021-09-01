@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="30dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#424347">
+
+
+    <com.hendraanggrian.appcompat.widget.SocialAutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/search_bar"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="#424347"
+        android:hint=" Search..."
+        android:textColorHint="#9F9E9E"
+        android:textColor="@color/white"
+        android:layout_marginStart="10dp"
+        android:drawableLeft="@drawable/ic_search"
+        android:paddingRight="5dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

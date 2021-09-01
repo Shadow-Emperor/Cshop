@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="100dp"
+    android:animateLayoutChanges="true"
+    android:id="@+id/drawer"
+    android:visibility="gone"
+    android:gravity="right">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/card_view">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_image"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_above="@+id/profile_username"
+            android:src="@mipmap/ic_launcher"
+            android:background="@color/white"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="2dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"/>
+        <TextView
+            android:id="@+id/user_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/profile_emil"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="UserName"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/akronim"
+            android:background="@color/transparent"/>
+
+
+        <TextView
+            android:id="@+id/user_emil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edit_profile"
+            android:layout_marginBottom="15dp"
+            android:text="user@mail.com"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/akronim"
+            android:background="@color/transparent"/>
+
+
+        <TextView
+            android:id="@+id/draw_wishlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/profile_emil"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Wishlist"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_heart"
+            android:drawablePadding="10dp"/>
+
+        <TextView
+            android:id="@+id/draw_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/profile_emil"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="History"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_history"
+            android:drawablePadding="10dp"/>
+        <TextView
+            android:id="@+id/draw_contactus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/profile_emil"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Contact us"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_contacts"
+            android:drawablePadding="10dp"/>
+
+        <TextView
+            android:id="@+id/draw_terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/profile_emil"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Terms &amp; conditions"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:drawablePadding="10dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/logout"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/logout_option"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="logout"
+                android:fontFamily="@font/akronim"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="right">
+    <TextView
+        android:id="@+id/appversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:text="version 1.0.0"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+    </LinearLayout>
+</RelativeLayout>

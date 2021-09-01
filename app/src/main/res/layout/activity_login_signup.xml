@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logsig"
+    tools:context=".LoginSignup">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/log_card_plain"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:translationZ="-10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/white">
+
+            <Button
+                android:id="@+id/LoginI"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape"
+                android:elevation="10dp"
+                android:outlineAmbientShadowColor="#00ffb7"
+                android:outlineSpotShadowColor="#00ffb7"
+                android:text="Login"
+                android:textColor="#000000"
+                android:translationZ="10dp"
+                app:backgroundTint="@color/white"
+                android:layout_marginRight="20dp"/>
+
+
+            <Button
+                android:id="@+id/RegisterI"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape"
+                android:text="Register"
+                android:textColor="#FFFFFF"
+                android:translationZ="10dp"
+                android:elevation="10dp"
+                android:layout_marginLeft="20dp"
+                android:outlineAmbientShadowColor="#00ffb7"
+                android:outlineSpotShadowColor="#00ffb7"
+                app:backgroundTint="@color/black" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
