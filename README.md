@@ -2,7 +2,8 @@
 
 *******************
 
-Online Shopping Application using Firebase as Database
+**Online Shopping Application using Firebase as Database**
+
 
 *******************
 
