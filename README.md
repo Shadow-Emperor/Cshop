@@ -3,12 +3,12 @@
 
 *******************
 
-##**Online Shopping Application using Firebase as Database**
+##Online Shopping Application using Firebase as Database
 
 
 
 
-###__Home__
+### Home
 
 ![Screenshot_2021-07-14-15-26-06-803_com abhi cshop](https://user-images.githubusercontent.com/78469096/131678256-9a6b9fe0-a7ca-41bd-9843-fb1e06a2defc.jpg)
 
