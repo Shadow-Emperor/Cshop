@@ -1,2 +1,8 @@
 # Cshop
-Sample project
+
+*******************
+
+Online Shopping Application using Firebase as Database
+
+*******************
+
